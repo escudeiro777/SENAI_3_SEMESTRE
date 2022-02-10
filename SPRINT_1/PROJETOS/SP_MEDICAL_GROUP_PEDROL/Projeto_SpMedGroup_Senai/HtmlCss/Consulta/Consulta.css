@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: normal;
+    font-family: 'Questrial', sans-serif;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    margin-bottom: 145px;
+    border-bottom: 5px solid #2E9984;
+}
+
+.ContainerGrid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ContainerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.LogoHeader{
+    margin-right: 82px;
+}
+
+.NavHeader{
+    display: flex;
+    width: 100%;;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LinkPagina{
+    text-decoration: none;
+    color: #52615E;
+    font-size: 34px; /* Diminuir na de admin  */
+    font-weight: 400;
+}
+
+.LinkImagem img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.LinkPaginaAtual{
+    text-decoration: none;
+    color: #2E9984;
+    font-size: 34px; /* Diminuir na de admin  */
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+main{
+    margin-top: 145px;
+}
+
+
+
+/* Resto da main */
+
+
+.ConsultaMain{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: rgba(123, 224, 203, 0.3);
+}
+
+.CadastroConsulta{
+    background: #FFFFFF;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    height: 545px;
+    width: 100%;
+    padding: 40px 80px 40px 80px;
+}
+
+.ContainerCadastroConsulta{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ContainerCadastroConsulta span{
+    color: #1D6153;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+
+.ContainerCadastroConsulta form{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LinhaFormCadastroConsulta{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CampoCadastroConsulta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.CampoCadastroConsulta label{
+    color: #52615E;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.ContainerCadastroConsulta input{
+    width: 420px;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.ContainerCadastroConsulta select{
+    width: 420px;
+    height: 48px;
+    border: 1px solid black; 
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.BoxBotaoCadastroConsulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+}
+
+.BoxBotaoCadastroConsulta button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 78px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    background-color: #5FAD9E;
+}
+
+.BoxListaCon{
+    margin-top: 120px;
+    background: #FFFFFF;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 60px 82px 60px 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DivisoriaVertical{
+    border-left: 1px solid #5FAD9E;
+    height: auto;
+    justify-self: center;
+    margin: 0px 30px 0px 30px;
+}
+
+.ColunaBoxListaCon{
+    width: 50%;
+}
+
+.ColunaBoxListaCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.TituloBoxListaCon{
+    font-weight: 400;
+    font-size: 48px;
+    color: #1D6153;
+}
+
+.CampoBoxListaCon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.SubTituloBoxListaCon{
+    font-weight: 400;
+    font-size: 36px;
+    color: #1D6153;
+    margin-right: 15px;
+}
+
+.CampoBoxListaCon p{
+    font-weight: 400;
+    font-size: 28px;
+    color: #52615E;
+    margin-top: 20px;
+}
+
+.CampoBoxListaCon input{
+    width: 100%;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.InfoUserCon{
+    display: flex;
+    align-items: center;
+}
+
+.InfoUserCon img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 1px solid #5FAD9E;
+}
+
+.InfoTextoUserCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LinhaTextoUserCon{
+    display: flex;
+    align-items: baseline;
+}
+
+.LinhaTextoUserCon p{
+    font-weight: 400;
+    font-size: 28px;
+    color: #52615E;
+    margin-top: 30px;
+}
+
+.InfoSituacao{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.CampoSituacaoCon p{
+    font-weight: 400;
+    font-size: 28px;
+    color: #52615E;
+    margin-top: 30px;
+}
+
+.InfoSituacao button{
+    padding: 6px 40px 6px 40px;
+    color: white;
+    background-color: red;
+    font-size: 34px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Resto da main */
+
+
+
+footer{
+    background-color: #356158;
+    height: 360px;
+}
+
+.ContainerFooter{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BoxFooterEsquerda{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.BoxFooterEsquerda span{
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+.BoxFooterEsquerda ul{
+    color: white;
+    font-size: 22px;
+    text-align: right;
+    list-style: inside;
+}
+
+.BoxFooterEsquerda ul li{
+    margin-bottom: 20px;
+}
+
+.BoxFooterDireita{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.BoxFooterDireita span{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+
+.BoxFooterDireita ul{
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    list-style: inside;
+}
+
+.BoxFooterDireita ul li{
+    margin-bottom: 20px;
+}
+
+@media(max-width:760px){
+
+    /* Header, footer e grid abaixo */
+
+
+    .ContainerGrid{
+        width: 730px;
+    }
+
+    .LogoHeader{
+        margin-right: 30px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .LinkPaginaAtual{
+        font-size: 22px;
+    }
+
+    .LinkPagina{
+        font-size: 22px;
+    }
+
+    .LinkImagem img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .BoxFooterEsquerda{
+        width: 250px;
+    }
+
+    .BoxFooterEsquerda span{
+        font-size: 22px;
+    }
+
+    .BoxFooterEsquerda ul{
+        font-size: 15px;
+    }
+
+    .ContainerFooter img{
+        height: 75px;
+        height: 75px;
+    }
+
+    .BoxFooterDireita{
+        width: 250px;
+    }
+
+    .BoxFooterDireita span{
+        font-size: 22px;
+    }
+
+    .BoxFooterDireita ul{
+        font-size: 15px;
+    }
+
+
+    /* Header, footer e gridacima */
+
+
+    .ContainerCadastroConsulta select, .ContainerCadastroConsulta input{
+        width: 270px;
+    }
+
+    .DivisoriaVertical{
+        margin: 0px 5px 0px 5px;
+    }
+}

@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpMedGroup.webAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IClinicaRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de clinica
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IClinicaRepository.Cadastrar(SpMedGroup.webAPI.Domains.Clinica)">
+            <summary>
+            Método para a criação de uma clínica 
+            </summary>
+            <param name="NovaClinica">Nova clínica a ser criada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IClinicaRepository.ListarTodas">
+            <summary>
+            Método para a listagem de todas as clínicas
+            </summary>
+            <returns>Lista de clínicas</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IClinicaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para buscar uma clínica específica
+            </summary>
+            <param name="IdClinica">Id da clínica buscada</param>
+            <returns>Clínica encontrada</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IClinicaRepository.Atualizar(SpMedGroup.webAPI.Domains.Clinica,System.Int32)">
+            <summary>
+            Método para atualizar uma clínica
+            </summary>
+            <param name="ClinicaAtualizada">Clínica atualizada</param>
+            <param name="IdClinicaAtualizada">Id da clínica a ser atualizada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IClinicaRepository.Deletar(System.Int32)">
+            <summary>
+            Método para remover uma clínica
+            </summary>
+            <param name="IdClinicaDeletada">Id da clínica a ser removida</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IConsultaRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de consulta
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.Agendar(SpMedGroup.webAPI.Domains.Consultum)">
+            <summary>
+            Método para a criação de uma nova consulta
+            </summary>
+            <param name="NovaConsulta">Nova consulta a ser agendada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.ListarTodas">
+            <summary>
+            Método para a listagem de todas as consultas
+            </summary>
+            <returns>Lista de consultas</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a busca de uma consulta específica
+            </summary>
+            <param name="IdConsulta">Id da consulta buscada</param>
+            <returns>Consulta encontrada</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.Atualizar(SpMedGroup.webAPI.Domains.Consultum,System.Int32)">
+            <summary>
+            Método para o update de uma consulta
+            </summary>
+            <param name="ConsultaAtualizada">Consulta atualizada</param>
+            <param name="IdConsultaAtualizada">Id da consulta a ser atualizada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de uma consulta
+            </summary>
+            <param name="IdConsultaDeletada">Id da consulta a ser removida</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.Cancelar(System.Int32)">
+            <summary>
+            Método para mudar o status de uma consulta para "Cancelada"
+            </summary>
+            <param name="IdConsultaCancelada">Id da consulta a ser cancelada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.ListarPorMedico(System.Int32)">
+            <summary>
+            Método para a listagem de todas as consultas associadas a um médico específico
+            </summary>
+            <param name="IdMedico">Id do médico atrelado as consultas</param>
+            <returns>Lista das consultas encontradas</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.ListarPorPaciente(System.Int32)">
+            <summary>
+            Método para a listagem de todas as consultas associadas a um paciente específico
+            </summary>
+            <param name="IdPaciente">Id do paciente atrelado as consultas</param>
+            <returns>Lista das consultas encontradas</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IConsultaRepository.AlterarDescricao(System.Int32,System.String)">
+            <summary>
+            Método para alterar a descrição de uma consulta específica
+            </summary>
+            <param name="IdConsulta">Id da consulta a ter sua descrição alterada</param>
+            <param name="Descricao">Nova descrição</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de especialidade
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository.Cadastrar(SpMedGroup.webAPI.Domains.Especialidade)">
+            <summary>
+            Método para o cadastro de uma nova especialidade
+            </summary>
+            <param name="NovaEspecialidade">Especialidade a ser cadastrada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository.ListarTodas">
+            <summary>
+            Método para a a leitura de todas as especialidades 
+            </summary>
+            <returns>Lista de especialidades</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a busca de uma especialidade específica
+            </summary>
+            <param name="IdEspecialidade">Id da especialidade buscada</param>
+            <returns>Especialidade encontrada</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository.Atualizar(SpMedGroup.webAPI.Domains.Especialidade,System.Int32)">
+            <summary>
+            Método para o update de uma especialidade
+            </summary>
+            <param name="EspecialidadeAtualizada">Especialidade atualizada</param>
+            <param name="IdEspecialidadeAtualizada">Id da especialidade a ser atualizada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IEspecialidadeRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de uma especialidade
+            </summary>
+            <param name="IdEspecialidadeDeletada">Especialidade a ser removida</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IMedicoRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de medico
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IMedicoRepository.Cadastrar(SpMedGroup.webAPI.Domains.Medico)">
+            <summary>
+            Metodo para o cadastro um novo médico
+            </summary>
+            <param name="NovoMedico">Novo médico a ser cadastrado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IMedicoRepository.ListarTodos">
+            <summary>
+            Método para a leitura de todos os médicos
+            </summary>
+            <returns>Lista de médicos</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IMedicoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a busca de um médico específico
+            </summary>
+            <param name="IdMedico">Id do médico buscado</param>
+            <returns>Médico encontrado</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IMedicoRepository.Atualizar(SpMedGroup.webAPI.Domains.Medico,System.Int32)">
+            <summary>
+            Método para o update de um médico
+            </summary>
+            <param name="MedicoAtualizado">Médico atualizado</param>
+            <param name="IdMedicoAtualizado">Id do médico a ser atualizado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IMedicoRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de um médico
+            </summary>
+            <param name="IdMedicoDeletado">Id do médico a ser removido</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IPacienteRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de paciente
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IPacienteRepository.Cadastrar(SpMedGroup.webAPI.Domains.Paciente)">
+            <summary>
+            Método para a criação de um novo paciente
+            </summary>
+            <param name="NovoPaciente">Novo paciente a ser criado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IPacienteRepository.ListarTodos">
+            <summary>
+            Método para a leitura de todos os pacientes
+            </summary>
+            <returns>Lista de pacientes</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IPacienteRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a leitura de um paciente específico
+            </summary>
+            <param name="IdPaciente">Id do paciente buscado</param>
+            <returns>Paciente encontrado</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IPacienteRepository.Atualizar(SpMedGroup.webAPI.Domains.Paciente,System.Int32)">
+            <summary>
+            Método para o update de um paciente
+            </summary>
+            <param name="PacienteAtualizado">Paciente atualizado</param>
+            <param name="IdPacienteAtualizado">Id do paciente a ser atualizado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IPacienteRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de um paciente
+            </summary>
+            <param name="IdPacienteDeletado">Id do paciente a ser removido</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.ISituacaoRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de situacao
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ISituacaoRepository.Cadastrar(SpMedGroup.webAPI.Domains.Situacao)">
+            <summary>
+            Método para o cadastro de uma nova situação de consulta
+            </summary>
+            <param name="NovaSituacao">Nova situação a ser cadastrada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ISituacaoRepository.ListarTodas">
+            <summary>
+            Método para a leitura de todas as situações de consulta
+            </summary>
+            <returns>Lista de situações de consulta</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ISituacaoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a busca de uma situação de consulta específica
+            </summary>
+            <param name="IdSituacao">Id da situação de consulta buscada</param>
+            <returns>Situação de consulta encontrada</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ISituacaoRepository.Atualizar(SpMedGroup.webAPI.Domains.Situacao,System.Int32)">
+            <summary>
+            Método para o update de uma situação de consulta
+            </summary>
+            <param name="SituacaoAtualizada">Situação de consulta atualizada</param>
+            <param name="IdSituacaoAtualizada">Id da situação de consulta a ser atualizada</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ISituacaoRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de uma situação de consulta
+            </summary>
+            <param name="IdSituacaoDeletada">Id da situação de consulta a ser removida</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de tipo usuario
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository.Cadastrar(SpMedGroup.webAPI.Domains.TipoUsuario)">
+            <summary>
+            Método para a criação de um novo tipo de usuário
+            </summary>
+            <param name="NovoTipoUsuario">Novo tipo de usuário a ser cadastrado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository.ListarTodas">
+            <summary>
+            Método para a listagem de todos os tipos de usuário
+            </summary>
+            <returns>Lista dos tipos de usuário</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a busca de um tipo de usuário específico
+            </summary>
+            <param name="IdTipoUsuario">Id do tipo de usuário buscado</param>
+            <returns>Tipo de usuário encontrado</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository.Atualizar(SpMedGroup.webAPI.Domains.TipoUsuario,System.Int32)">
+            <summary>
+            Método para o update de um tipo de usuário
+            </summary>
+            <param name="TipoUsuarioAtualizado">Tipo de usuário atualizado</param>
+            <param name="IdTipoUsuarioAtualizado">Id do tipo de usuário a ser atualizado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.ITipoUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de um tipo de usuário
+            </summary>
+            <param name="IdTipoUsuarioDeletado">Id do tipo de usuário a ser removido</param>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface para a definição dos métodos da entidade de usuario
+            </summary>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.Cadastrar(SpMedGroup.webAPI.Domains.Usuario)">
+            <summary>
+            Método para o cadastro de um novo usuário
+            </summary>
+            <param name="NovoUsuario">Novo usuário recebido</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.ListarTodos">
+            <summary>
+            Método para a leitura de todos os usuários
+            </summary>
+            <returns>Uma lista com todos os usuários</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Método para a leitura de um usuário específico
+            </summary>
+            <param name="IdUsuario">Id do usuário buscado</param>
+            <returns>Usuário encontrado</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.Atualizar(SpMedGroup.webAPI.Domains.Usuario,System.Int32)">
+            <summary>
+            Método para o update de um usuário 
+            </summary>
+            <param name="UsuarioAtualizado">Usuário atualizado</param>
+            <param name="IdUsuarioAtualizado">Id do usuário a ser atualizado</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Método para a remoção de um usuário
+            </summary>
+            <param name="IdUsuarioDeletado">Id do usuário a ser removido</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.Logar(System.String,System.String)">
+            <summary>
+            Método para o login(leitura por email e senha) de um usuário
+            </summary>
+            <param name="Email">Email do usuário buscado</param>
+            <param name="Senha">Senha do usuário buscado</param>
+            <returns>Usuário encontrado</returns>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.SalvarImgPerfil(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.String)">
+            <summary>
+            Método para salvar a imagem de perfil de um usuário 
+            </summary>
+            <param name="Img">Imagem de perfil no formato de arquivo</param>
+            <param name="IdUsuario">Id do usuário relativo a imagem</param>
+        </member>
+        <member name="M:SpMedGroup.webAPI.Interfaces.IUsuarioRepository.RetornarImgPerfil(System.Int32)">
+            <summary>
+            Método para acessar a imagem de perfil de um usuário
+            </summary>
+            <param name="IdUsuario">Id do usuário relativo a imagem</param>
+            <returns>Imagem em string de base 64</returns>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.ClinicaRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Clinica
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.ClinicaRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.ConsultaRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Consulta
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.ConsultaRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.EspecialidadeRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Especialidade
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.EspecialidadeRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.MedicoRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Medico
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.MedicoRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.PacienteRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Paciente
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.PacienteRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.SituacaoRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Situacao
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.SituacaoRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.TipoUsuarioRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de TipoUsuario
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.TipoUsuarioRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+        <member name="T:SpMedGroup.webAPI.Repositories.UsuarioRepository">
+            <summary>
+            Repositório para a definição da usabilidade dos métodos da entidade de Usuario
+            </summary>
+        </member>
+        <member name="F:SpMedGroup.webAPI.Repositories.UsuarioRepository.Ctx">
+            <summary>
+            Objeto do tipo contexto para as interações com o BD
+            </summary>
+        </member>
+    </members>
+</doc>

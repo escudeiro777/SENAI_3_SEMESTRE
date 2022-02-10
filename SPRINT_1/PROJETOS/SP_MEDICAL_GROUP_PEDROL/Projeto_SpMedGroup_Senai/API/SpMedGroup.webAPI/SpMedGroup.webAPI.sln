@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpMedGroup.webAPI", "SpMedGroup.webAPI\SpMedGroup.webAPI.csproj", "{CAA8D848-F0E8-4A7D-B179-DF55687021A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA8D848-F0E8-4A7D-B179-DF55687021A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA8D848-F0E8-4A7D-B179-DF55687021A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA8D848-F0E8-4A7D-B179-DF55687021A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA8D848-F0E8-4A7D-B179-DF55687021A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8BD1AB1-D72B-456F-9210-836DCA2A605B}
+	EndGlobalSection
+EndGlobal

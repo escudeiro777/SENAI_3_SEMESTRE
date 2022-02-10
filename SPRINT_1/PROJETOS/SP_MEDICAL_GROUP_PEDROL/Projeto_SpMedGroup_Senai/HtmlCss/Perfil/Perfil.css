@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: normal;
+    font-family: 'Questrial', sans-serif;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    margin-bottom: 145px;
+    border-bottom: 5px solid #2E9984;
+}
+
+.ContainerGrid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ContainerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.LogoHeader{
+    margin-right: 82px;
+}
+
+.NavHeader{
+    display: flex;
+    width: 100%;;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LinkPagina{
+    text-decoration: none;
+    color: #52615E;
+    font-size: 34px; /* Diminuir na de admin  */
+    font-weight: 400;
+}
+
+.LinkImagem img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.LinkPaginaAtual{
+    text-decoration: none;
+    color: #2E9984;
+    font-size: 34px; /* Diminuir na de admin  */
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+main{
+    margin-top: 145px;
+}
+
+
+/* Resto da main */
+
+
+.MainPerfil{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: rgba(123, 224, 203, 0.3);
+}
+
+.ContainerPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 485px;
+    padding: 32px 82px 32px 82px;
+    background: #FFFFFF;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 1200px;
+}
+.ContainerPerfil h1{
+    font-weight: 400;
+    font-size: 48px;
+    color: #1D6153;
+}
+.InfosPerfil{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 260px;
+}
+
+.InfosPerfil img{
+    border-radius: 50%;
+}
+
+.ColunaInfosPerfil{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CampoInfosPerfil{
+    display: flex;
+    align-items: baseline;
+}
+
+.CampoInfosPerfil h2{
+    font-weight: 400;
+    font-size: 36px;
+    color: #1D6153;
+    margin-right: 15px;
+}
+
+.CampoInfosPerfil span{
+    color: #52615E;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.LinksPerfil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LinksPerfil a{
+    font-size: 26px;
+    text-decoration-line: underline;
+}
+
+.PerfilAltImg{
+    color: #1D6153;
+}
+
+.PerfilLogout{
+    color: red;
+}
+
+
+
+/* Resto da main */
+
+
+footer{
+    background-color: #356158;
+    height: 360px;
+}
+
+.ContainerFooter{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BoxFooterEsquerda{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.BoxFooterEsquerda span{
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+.BoxFooterEsquerda ul{
+    color: white;
+    font-size: 22px;
+    text-align: right;
+    list-style: inside;
+}
+
+.BoxFooterEsquerda ul li{
+    margin-bottom: 20px;
+}
+
+.BoxFooterDireita{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.BoxFooterDireita span{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+
+.BoxFooterDireita ul{
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    list-style: inside;
+}
+
+.BoxFooterDireita ul li{
+    margin-bottom: 20px;
+}
+
+@media(max-width:760px){
+
+    /* Header, footer e grid abaixo */
+
+
+    .ContainerGrid{
+        width: 730px;
+    }
+
+    .LogoHeader{
+        margin-right: 30px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .LinkPaginaAtual{
+        font-size: 22px;
+    }
+
+    .LinkPagina{
+        font-size: 22px;
+    }
+
+    .LinkImagem img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .BoxFooterEsquerda{
+        width: 250px;
+    }
+
+    .BoxFooterEsquerda span{
+        font-size: 22px;
+    }
+
+    .BoxFooterEsquerda ul{
+        font-size: 15px;
+    }
+
+    .ContainerFooter img{
+        height: 75px;
+        height: 75px;
+    }
+
+    .BoxFooterDireita{
+        width: 250px;
+    }
+
+    .BoxFooterDireita span{
+        font-size: 22px;
+    }
+
+    .BoxFooterDireita ul{
+        font-size: 15px;
+    }
+
+
+    /* Header, footer e gridacima */
+
+
+    .ContainerPerfil{
+        align-items: center;
+        height: 900px;
+    }
+
+    .InfosPerfil{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 675px;
+    }
+    .ColunaInfosPerfil{
+        margin-bottom: 30px;
+        width: 50%;
+    }
+}

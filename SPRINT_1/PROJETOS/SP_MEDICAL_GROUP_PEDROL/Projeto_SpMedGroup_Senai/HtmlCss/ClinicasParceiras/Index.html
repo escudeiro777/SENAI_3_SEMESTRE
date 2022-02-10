@@ -1,0 +1,150 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpMed - Clínicas</title>
+    <link rel="stylesheet" href="ClinicasParceiras.css" />
+</head>
+<body>
+    <header>
+        <div class="ContainerGrid ContainerHeader">
+            <a>
+                <img class="LogoHeader" src="../assets_/LogoPadrao.png" alt="Logo da empresa SpMedicalGroup" />
+            </a>
+            <nav class="NavHeader">
+                <a class="LinkPaginaAtual">Início</a>
+                <a class="LinkPagina">Clínicas parceiras</a>
+                <a class="LinkPagina">Minhas Consultas</a>
+                <a class="LinkPagina">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="ClinicaMain">
+        <section class="CadastroClinica">
+            <div class="ContainerCadastroClinica ContainerGrid">
+                <span>Cadastrar Clinica</span>
+                <form>
+                    <div class="LinhaFormCadastroClinica">
+                        <div class="CampoCadastroClinica">
+                            <label>Endereço</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="CampoCadastroClinica">
+                            <label>CNPJ</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="LinhaFormCadastroClinica">
+                        <div class="CampoCadastroClinica">
+                            <label>Razão Social</label>
+                            <input type="text" />
+                        </div>
+                        <div class="CampoCadastroClinica">
+                            <label>Nome Fantasia</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="LinhaFormCadastroClinica">
+                        <div class="CampoCadastroClinica">
+                            <label>Horário de Abertura</label>
+                            <input type="time" />
+                        </div>
+                        <div class="CampoCadastroClinica">
+                            <label>Horário de fechamento</label>
+                            <input type="time" />
+                        </div>
+                    </div>
+                    <div class="BoxBotaoCadastroClinica">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="ListaClinicas">
+            <div class="ContainerGrid ContainerListaClinicas">
+                <div class="BoxClinica">
+                    <div class="InfosClinica">
+                        <div class="IdentificadoresClinica">
+                            <h1>NomeFantasia</h1>
+                            <span>Id</span>
+                        </div>
+                        <div class="DadosClinica">
+                            <div class="ColunaDadosClinica">
+                                <div class="BoxColDadosClinica">
+                                    <h2>Endereço</h2>
+                                    <span>endereço</span>
+                                </div>
+                                <div class="BoxColDadosClinica">
+                                    <h2>CNPJ</h2>
+                                    <span>cnpj</span>
+                                </div>
+                            </div>
+                            <div class="ColunaDadosClinica">
+                                <div class="BoxColDadosClinica">
+                                    <h2>Razão Social</h2>
+                                    <span>razão social</span>
+                                </div>
+                                <div class="BoxColDadosClinica">
+                                    <h2>Horário de funcionamento</h2>
+                                    <span>hoário de funcionamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="DivisoriaClinica"></div>
+                    <div class="InfosMedsClinica">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Médicos</th>
+                                    <th>Especialidades</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ednaldo Pereira</td>
+                                    <td>Terapia</td>
+                                </tr>
+                                <tr>
+                                    <td>Ednaldo Pereira</td>
+                                    <td>Terapia</td>
+                                </tr>
+                                <tr>
+                                    <td>Ednaldo Pereira</td>
+                                    <td>Terapia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="ContainerGrid ContainerFooter">
+            <div class="BoxFooterEsquerda">
+                <span>Links de apoio</span>
+                <ul>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                </ul>
+            </div>
+            <img src="../assets_/logo_spmedgroup_v2 1.png" />
+            <div class="BoxFooterDireita">
+                <span>Contato</span>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Email</li>
+                    <li>Telefone</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

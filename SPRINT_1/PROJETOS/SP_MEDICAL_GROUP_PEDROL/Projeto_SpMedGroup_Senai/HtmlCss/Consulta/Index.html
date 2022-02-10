@@ -1,0 +1,330 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpMed - Consultas</title>
+    <link rel="stylesheet" href="Consulta.css" />
+</head>
+
+<body>
+    <header>
+        <div class="ContainerGrid ContainerHeader">
+            <a>
+                <img class="LogoHeader" src="../assets_/LogoPadrao.png" alt="Logo da empresa SpMedicalGroup" />
+            </a>
+            <nav class="NavHeader">
+                <a class="LinkPaginaAtual">Início</a>
+                <a class="LinkPagina">Clínicas parceiras</a>
+                <a class="LinkPagina">Minhas Consultas</a>
+                <a class="LinkPagina">Login</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="ConsultaMain">
+        <div class="ContainerConsulta ContainerGrid">
+            <section class="CadastroConsulta">
+                <div class="ContainerCadastroConsulta">
+                    <span>Agendar Consulta</span>
+                    <form>
+                        <div class="LinhaFormCadastroConsulta">
+                            <div class="CampoCadastroConsulta">
+                                <label>Médico</label>
+                                <select></select>
+                            </div>
+                            <div class="CampoCadastroConsulta">
+                                <label>Paciente</label>
+                                <select></select>
+                            </div>
+                        </div>
+                        <div class="LinhaFormCadastroConsulta">
+                            <div class="CampoCadastroConsulta">
+                                <label>Data e hora</label>
+                                <input type="datetime-local" />
+                            </div>
+                            <div class="CampoCadastroConsulta">
+                                <label>Descrição</label>
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="BoxBotaoCadastroConsulta">
+                            <button type="submit">Agendar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="ListaConsulta">
+                <div class="BoxListaCon">
+                    <div class="ColunaBoxListaCon">
+                        <span class="TituloBoxListaCon">Informações da consulta</span>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Descrição</span>
+                            <p>Minions ipsum poulet tikka masala jeje po kass uuuhhh. Ti aamoo! gelatooo para tú wiiiii baboiii hahaha poulet tikka masala. </p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Data</span>
+                            <p>00/00/0000</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Hora</span>
+                            <p>00:00:00</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">CNPJ da clínica</span>
+                            <p>Confia :)</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Endereço</span>
+                            <p>Perto do mercadinho ali da esquina</p>
+                        </div>
+                    </div>
+                    <div class="DivisoriaVertical"></div>
+                    <div class="ColunaBoxListaCon">
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Médico</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CRM:</span>
+                                        <p>crm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Paciente</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CPF:</span>
+                                        <p>cpf</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">RG:</span>
+                                        <p>rg</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoSituacaoCon">
+                            <span class="TituloBoxListaCon">Situação:</span>
+                            <div class="InfoSituacao">
+                                <p>situação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="BoxListaCon">
+                    <div class="ColunaBoxListaCon">
+                        <span class="TituloBoxListaCon">Informações da consulta</span>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Descrição</span>
+                            <p>Minions ipsum poulet tikka masala jeje po kass uuuhhh. Ti aamoo! gelatooo para tú wiiiii baboiii hahaha poulet tikka masala. </p>
+                            <input type="text" placeholder="Alterar descrição..." />
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Data</span>
+                            <p>00/00/0000</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Hora</span>
+                            <p>00:00:00</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">CNPJ da clínica</span>
+                            <p>Confia :)</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Endereço</span>
+                            <p>Perto do mercadinho ali da esquina</p>
+                        </div>
+                    </div>
+                    <div class="DivisoriaVertical"></div>
+                    <div class="ColunaBoxListaCon">
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Médico</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CRM:</span>
+                                        <p>crm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Paciente</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CPF:</span>
+                                        <p>cpf</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">RG:</span>
+                                        <p>rg</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoSituacaoCon">
+                            <span class="TituloBoxListaCon">Situação:</span>
+                            <div class="InfoSituacao">
+                                <p>situação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="BoxListaCon">
+                    <div class="ColunaBoxListaCon">
+                        <span class="TituloBoxListaCon">Informações da consulta</span>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Descrição</span>
+                            <p>Minions ipsum poulet tikka masala jeje po kass uuuhhh. Ti aamoo! gelatooo para tú wiiiii baboiii hahaha poulet tikka masala. </p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Data</span>
+                            <p>00/00/0000</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Hora</span>
+                            <p>00:00:00</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">CNPJ da clínica</span>
+                            <p>Confia :)</p>
+                        </div>
+                        <div class="CampoBoxListaCon">
+                            <span class="SubTituloBoxListaCon">Endereço</span>
+                            <p>Perto do mercadinho ali da esquina</p>
+                        </div>
+                    </div>
+                    <div class="DivisoriaVertical"></div>
+                    <div class="ColunaBoxListaCon">
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Médico</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CRM:</span>
+                                        <p>crm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoUserCon">
+                            <span class="TituloBoxListaCon">Paciente</span>
+                            <div class="InfoUserCon">
+                                <img src="../assets_/padrao.jpg" />
+                                <div class="InfoTextoUserCon">
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Nome:</span>
+                                        <p>nome</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">Email:</span>
+                                        <p>email</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">CPF:</span>
+                                        <p>cpf</p>
+                                    </div>
+                                    <div class="LinhaTextoUserCon">
+                                        <span class="SubTituloBoxListaCon">RG:</span>
+                                        <p>rg</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CampoSituacaoCon">
+                            <span class="TituloBoxListaCon">Situação:</span>
+                            <div class="InfoSituacao">
+                                <p>situação</p>
+                                <button>Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="ContainerGrid ContainerFooter">
+            <div class="BoxFooterEsquerda">
+                <span>Links de apoio</span>
+                <ul>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                    <li>Link Institucional</li>
+                </ul>
+            </div>
+            <img src="../assets_/logo_spmedgroup_v2 1.png" />
+            <div class="BoxFooterDireita">
+                <span>Contato</span>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Email</li>
+                    <li>Telefone</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
