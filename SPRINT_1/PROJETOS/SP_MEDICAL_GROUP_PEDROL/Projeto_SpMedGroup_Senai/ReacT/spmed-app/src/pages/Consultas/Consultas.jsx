@@ -22,7 +22,7 @@ export default function Consultas() {
     function ListarTodas() {
         axios('https://62055968161670001741b97e.mockapi.io/Consulta', {
             headers: {
-                Authorization: 'Bearer ' + localStorage.getItem('usuario-login'),
+                // Authorization: 'Bearer ' + localStorage.getItem('usuario-login'),
             },
         }).then((resposta) => {
             if (resposta.status === 200) {
@@ -222,7 +222,7 @@ export default function Consultas() {
                                                     {
                                                         ListaMedico.map((Medico) => {
                                                             return (
-                                                                <option value={Medico.idMedico}>{Medico.idUsuarioNavigation.email}</option>
+                                                                <option value={Medico.idMedico}>{Medico.Usuario.Email}</option>
                                                             )
                                                         })
                                                     }
@@ -237,7 +237,7 @@ export default function Consultas() {
                                                     {
                                                         ListaPaciente.map((Paciente) => {
                                                             return (
-                                                                <option value={Paciente.idPaciente}>{Paciente.idUsuarioNavigation.email}</option>
+                                                                <option value={Paciente.idPaciente}>{Paciente.Usuario.Email}</option>
                                                             )
                                                         })
                                                     }
@@ -302,11 +302,11 @@ export default function Consultas() {
                                                         <div class="InfoTextoUserCon">
                                                             <div class="LinhaTextoUserCon">
                                                                 <span class="SubTituloBoxListaCon">Nome:</span>
-                                                                <p>{Consulta.Medico.nome}</p>
+                                                                <p>{Consulta.Medico.Nome}</p>
                                                             </div>
                                                             <div class="LinhaTextoUserCon">
                                                                 <span class="SubTituloBoxListaCon">Email:</span>
-                                                                <p>{Consulta.Medico.Email}</p>
+                                                                <p>{Consulta.Medico.Usuario.Email}</p>
                                                             </div>
                                                             <div class="LinhaTextoUserCon">
                                                                 <span class="SubTituloBoxListaCon">CRM:</span>
@@ -342,7 +342,7 @@ export default function Consultas() {
                                                 <div class="CampoSituacaoCon">
                                                     <span class="TituloBoxListaCon">Situação:</span>
                                                     <div class="InfoSituacao">
-                                                        <p>{Consulta.idSituacaoNavigation[0].nome}</p>
+                                                        {/* <p>{Consulta.Situacao.Nome}</p>: */}
                                                         {/* {
                                                             IsLoading === true 
                                                             <button onClick={(Evento) => CancelarConsulta(Evento, Consulta.idConsulta)} disabled>Cancelando...</button> : <button onClick={(Evento) => CancelarConsulta(Evento, Consulta.idConsulta)}>Cancelar</button>
