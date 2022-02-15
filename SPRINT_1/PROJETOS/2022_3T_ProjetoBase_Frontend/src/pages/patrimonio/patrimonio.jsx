@@ -111,8 +111,8 @@ export const Patrimonio = () => {
               <input
                 className="input__login" 
                 type="text" 
-                name="nomePatrimonio" 
-                id="nomePatrimonio" 
+                name="codigoPatrimonio" 
+                id="codigoPatrimonio" 
                 placeholder="Código do Patrimonio"
                 value={descricao}
                 onChange={(e) => setDescricao(e.target.value)}
@@ -139,8 +139,8 @@ export const Patrimonio = () => {
               accept="image/png, image/jpeg" />
 
               <button 
-                type="submit" 
                 className="btn btn__cadastro"
+                id="cadastrar"
                 onClick={(e) => Cadastrar(e)}
               >
                 Cadastrar
